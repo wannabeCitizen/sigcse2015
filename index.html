@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1>Beyond the Flipped Classroom</h1>
+                <h3>Learning By Doing Through Challenges and Hackathons</h3>
+                <small>SIGCSE 2015</small>
+                <p><small>by Michael Skirpan</small></p>
+            </section>
+            <section>
+                <h1>Want to follow along or go back to something?</h1>
+                <p>Go to http://mwskirpan.com/sigcse2015</p>
+            </section>
+            <section>
+                <h2>Since we don't know eachother</h2>
+                <p>I'm a PhD Student at CU-Boulder working in HCC under Tom Yeh.  I started my program in CU's School of Education, but made my way over to the computer science department because I wanted to <em>build things</em>!</p>
+                <p style="text-align: left">My research interests are:</p>
+                    <ul>
+                        <li>Educational Technologies</li>
+                        <li>Inclusive, Experiential, and Democratic Classroom Design</li>
+                        <li>Understanding what kinds of insights we get from "Big Data" (i.e., model interpretability, insight subjectivity, appropriateness of human judgement vs. data-driven decisions)</li>
+                        <li>Modes of respresenting data (visual and otherwise)</li>
+                        <li>Art and Aesthetics of Technology and Data</li>
+                    </ul>
+                <p>GitHub: <a href="www.github.com/wannabeCitizen">wannabeCitizen</a></p>
+                <p>Website: <a href="http://mwskirpan.com">mwskirpan.com</a></p>
+            </section>
+            <section>
+                <h1>What's ahead</h1>
+                <ol>
+                    <li>Framework</li>
+                    <li>Our Class Model</li>
+                    <li>Findings</li>
+                    <li>Future</li>
+                    <li>Q&A</li>
+                </ol>
+                <p><small>I'll try to move fast!</small></p>
+            </section>
+            <section>
+                <section>
+                    <h1>Framework</h1>
+                    <p>Or, why I don't just stand up front and lecture</p>
+                </section>
+                <section>
+                    <h1>Democratic Education</h1>
+                    <ul>
+                        <li>Ownership over one's education</li>
+                        <li>Learn how to motivate and direct oneself</li>
+                        <li>An equal (or any!) voice in classroom decisions</li>
+                        <li>Intrest-driven</li>
+                        <li>Can be an engine for critical pedgagogy</li>
+                    </ul>
+                    <p>Cf. Jerry Mintz, Isaac Graves, Ben Kirshner, Paolo Freire, Meira Levinson, Amy Gutmann, Michael Apple, John Dewey</p>
+                </section>
+                <section>
+                    <h2>Or the old addage says it best..</h2>
+                    <blockquote>If you're always doing what you're told, you'll always be being told what to do.</blockquote>
+                    <small>This is a real problem!</small>
+                </section>
+                <section>
+                    <h1>Experiential Education</h1>
+                    <ul>
+                        <li>Experience <em>is</em> pedagogy</li>
+                        <li>Emphasis on skills over facts</li>
+                        <li>Failure and iteration is <em>good</em></li>
+                        <li>Student-centered rather than teacher-centered</li>
+                    </ul>
+                    <p>Cf. John Dewey, Maria Montessori, Jean-Jacques Rousseau, Lev Vygotsky, Mitch Reznik</p>
+                </section>
+                <section>
+                    <h2>So what's this have to do with the flipped classroom?</h2>
+                    <p>It was a design inspiration, but we changed it quite a bit</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mazur's Flipped Classroom</th>
+                                <th>Our Design</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>At-home Video Lecture</td>
+                                <td>Learning Challenges</td>
+                            </tr>
+                            <tr>
+                                <td>Problem Workshops</td>
+                                <td>In-class Hackathon</td>
+                            </tr>
+                            <tr>
+                                <td>Clicker Quizzes</td>
+                                <td>Milestone Submissions</td>
+                            </tr>
+                                <td>Peer Learning</td>
+                                <td>Small Group Coding</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <h2 style="text-align: left">What we are looking to improve upon from traditional teaching:</h2>
+                <ol>
+                    <li>Students walk away with tangible skills that have been experientially verified</li>
+                    <li>Get students more engaged by giving them a stake in their education</li>
+                    <li>More inclusive classroom by making it a working community</li>
+                    <li>Real projects that invest students in continuing with the discipline</li>
+                    <li>Get real insight into individual learning processes</li>
+                </ol>
+            </section>
+            <section>
+                <h1>What we actually did</h1>
+                <p>We have completed two courses with this design: Spring 2014 for a User-Centered Design and Development Class (what the SIGCSE paper is based on) and Fall 2014 for Big Data.</p>
+                <p>We are currently in the midst of our third iteration with another UCDD class</p>
+            </section>
+            <section>
+                <h2 style="text-align: left">Class Components: Overview</h2>
+                <ul>
+                    <li>Learning Challenges at Home</li>
+                    <li>Hackathons in Class</li>
+                    <li>Journals and Forums for Feedback and Formative Assessment</li>
+                    <li>Semester Projects</li>
+                </ul>
+            </section>
+            <section>
+                <h2 style="text-align: left">Differences between Fall and Spring</h2>
+                <ul>
+                    <li>Spring - Google Docs vs. Fall - GitHub and Class Website</li>
+                    <li>Spring - Learning Journals vs. Fall - Student Forums</li>
+                    <li>Spring - Small Final Project in Teams vs. Fall - Big Final Project as Class</li>
+                    <li>Spring - No Lecture vs. Fall - 30-45 mins for Lecture, Discussion, or Presentation</li>
+                </ul>
+                <p>I can answer the why's of these changes during Q&A</p>
+            </section>
+
+            <section>
+                <section>
+                    <h1>Learning Challenges</h1>
+                </section>
+                <section>
+                    <div float="left">
+                        <ul>
+                            <li>Assignment Posted Tuesday Due Sunday</li>
+                            <li>Checkpoint-based Tutorial Style</li>
+                            <li>Submission Template</li>
+                            <li>Reflection Questions</li>
+                        </ul>
+                    </div>
+                    <div float="right">
+                        <img src="img/d3ChallengeFall.png" height="350" width="450">
+                        <img src="img/sample_challenge.png" height="250" width="450">
+                    <div>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Understanding Our Students Learning Process</h2>
+                    <p>Google Docs Paradigm</p>
+                    <img src="img/Challenge_Revisions.png">
+                </section>
+                <section>
+                    <p>GitHub Paradigm</p>
+                    <img src="img/commitsFall.png">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>In-class Hackathons</h1>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Flow of Class</h2>
+                    <ul>
+                        <li>Show and tell + Short Discussion of Concepts (Fall only)</li>
+                        <li>Instructors or industry/academic speaker motivates hackathon with talk (Fall only)</li>
+                        <li>Students are either assigned or choose groups</li>
+                        <li>Navigate to assignment to see objectives and prerequisites</li>
+                        <li>Come up with implementation plan</li>
+                        <li>Submit milestones using template</li>
+                        <li>Share with class</li>
+                        <li>Outside judges give feedback</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>What a student would see</h2>
+                    <img src="img/hackFall.png" height="590" width="735">
+                </section>
+                <section>
+                    <h2>What it really looks like!</h2>
+                    <img src="img/hack1.jpg">
+                </section>
+                <section>
+                    <h2>Working on Github's API</h2>
+                    <img src="img/github_hack.jpg">
+                </section>
+                <section>
+                    <h2>Fast Forward Labs joined us</h2>
+                    <img src="img/hack2.jpg">
+                </section>
+                <section>
+                    <img src="img/hack3.jpg">
+                </section>
+                <section>
+                    <h2>@ Google - Boulder</h2>
+                    <img src="img/hack4.jpg">
+                </section>
+                <section>
+                    <img src="img/hack5.jpg">
+                </section>
+                <section>
+                    <h2>Hacking Robots in a Theater Space</h2>
+                    <img src="img/hack6.jpg">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Journals and Forums</h1>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Spring 2014</h2>
+                    <p style="text-align: left">Each week, we provided a series of qualitative and quantitative questions that students submitted with homework.  We used this feedback as formative assessment to adapt each week's content and challenges.</p>
+                    <img src="img/sample_journal.png">
+                </section>
+                <section>
+                    <h2 style="text-align: left">Fall 2014</h2>
+                    <p style="text-align: left">To be truer to "coding communities", instead of journals we asked students to post questions and feedback on a public forum.</p>
+                    <img src="img/git_issueFall.png" width="650" height="400">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Class Projects</h1>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Spring 2014</h2>
+                    <ul>
+                        <li>Small groups worked on separate projects</li>
+                        <li>Projects were proposed 2/3 way into semester</li>
+                        <li>Milestones showed progress</li>
+                        <li>Final submission need only be prototype</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Fall 2014</h2>
+                    <ul>
+                        <li>Project development began first week of class with 'mini-project'</li>
+                        <li>Final project was a class effort toward a massive installation (Thanks to CU's EEF!)</li>
+                        <li>Students each submitted an idea then voted what would be implemented</li>
+                        <li>End result was a full implementation for a showcase exhibit</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Check out the results!</h1>
+                </section>
+                <section>
+                    <h2>Spring - Leap Motion Graph Traversal</h2>
+                    <img src="img/spring_project1.jpg">
+                </section>
+                <section>
+                    <h2>Spring - Leap Motion Gesture Music</h2>
+                    <img src="img/expo1.jpg">
+                </section>
+                <section>
+                    <h2>Fall - Conversation Tracker</h2>
+                    <img src="img/nsa_display.jpg">
+                </section>
+                <section>
+                    <h2>Fall - Live Equalizer</h2>
+                    <img src="img/equ_display.jpg">
+                </section>
+                <section>
+                    <h2>Fall - Andy Warhol + Steve Wozniak + API Data</h2>
+                    <img src="img/woz_display.jpg">
+                </section>
+                <section>
+                    <h2>Fall - Foot Traffic Visualization</h2>
+                    <img src="img/traffic_display.jpg">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Findings</h1>
+                </section>
+                <section>
+                    <h2>Surprise! Students Procrastinate</h2>
+                    <img src="img/student_edits.png">
+                    <p>Now we have mid-week milestones due!</p>
+                </section>
+                <section>
+                    <h2>Time = Perceived Difficulty</h2>
+                    <img src="img/diff_time_graph.png">
+                    <p>Now we break up difficult tasks into smaller units</p>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Some Spring Numbers</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Measure</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Attendance</td>
+                                <td>92%</td>
+                            </tr>
+                            <tr>
+                                <td>Assignment Completion</td>
+                                <td>89%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Sadly, we're still analyzing fall data for comparison, but here are some preliminary findings:</h2>
+                    <ul>
+                        <li>Public forums are good for peer learning, but bad for feedback.</li>
+                        <li>Bigger project yields bigger results</li>
+                        <li>Students respond well to choice (highest completion rates and most work put in for things that were voted/chosen)</li>
+                        <li>Google revision data leads to finer-grain insight into common mistakes and progression, but requires more analytic tools.  GitHub better supports content delivery and peer-to-peer learning networks.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Some remarks on scalability and generalizability</h1>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Scalability</h2>
+                    <p>Benefits...</p>
+                    <ul>
+                        <li>Help retain sense of community rather than "being another number."</li>
+                        <li>Mechanism for peer learning as small-group work scales.</li>
+                        <li>Content delivery works the same.</li>
+                    </ul>
+                    <p>Costs...</p>
+                    <ul>
+                        <li>Student-level insight requires more-than-usual instructional support</li>
+                        <li>Harder to spot "free riders"</li>
+                        <li>Tracking and supporting projects could get unwieldy</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 style="text-align: left">Generalizability</h2>
+                    <p>This class model, out of the box, is best for CS courses with an emphasis on building things (ie., software engineering, front-end design, data engineering, etc.)<p>
+                    <p>However, what if you wanted to test the waters in a more conceptual or math-based course (ie, algorithms, numerical analysis, programming languages, etc.)?
+                    <ul>
+                        <li>Use hackathons more sparsely to synthesize concepts as they are wrapped up.</li>
+                        <li>Use the project design phase to gauge your students' applied understanding.</li>
+                        <li>Find paradigmatic code snippets, articles, and resources for your students to go through at home to lessen the burden on class time.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Future</h1>
+                </section>
+                <section>
+                    <h2 style="text-align: left">My own courses</h2>
+                    <p>Fall 2015 - Democracy in the Digital Era</p>
+                    <p>Spring 2016 - Data Insights</p>
+                </section>
+            </section>
+            <section>
+                <h1>Thanks for your time!</h1>
+                <h2>Now, let's talk.</h2>
+            </section>
+        </div>
+    </div>
+    <script src="reveal.js/js/reveal.js"></script>
+    <script src="reveal.js/lib/js/head.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            slideNumber: true,
+            keyboard: true,
+            overview: true,
+            transition: 'convex'
+        });
+
+    </script>
+</body>
+</html>
